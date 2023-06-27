@@ -9,7 +9,13 @@
             Thread threadOne = new Thread(() => coinJar.AddCoin(0.25m));
             Thread threadTwo = new Thread(() => coinJar.AddCoin(0.25m));
             Thread threadThree = new Thread(() => coinJar.AddCoin(0.25m));
+            //Thread threadFour = new Thread(() =>
+            //{
+            //    var balance = coinJar.GetCoinBalance();
+            //    Console.WriteLine(balance);
+            //});
 
+            //threadFour.Start();
             threadOne.Start();
             threadTwo.Start();
             threadThree.Start();
